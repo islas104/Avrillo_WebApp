@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Form</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="confirmation" style="display: none;">
+        <h3>Confirmation</h3>
+        <p>Thank you, <span id="confirmName"></span>! Your message: <span id="confirmMessage"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
